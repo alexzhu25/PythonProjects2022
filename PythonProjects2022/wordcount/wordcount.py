@@ -2,8 +2,12 @@
 # counts the number of times that each word appears in a text file
 
 # source text file
-fo = open(.\"wordcountdoc.txt") 
+try: 
+  fo = open("wordcount/wordcountdoc.txt") 
 # TODO: can add query for custom document selection
+except:
+  print("Error: Can't open file.")
+  exit()
 
 
 #\\=====List implementation of program=====\\
@@ -37,6 +41,7 @@ for line in lines:
   words = line.split()
   for word in words:
     w = word.strip().lower() # when considering words, ignore caps
+    # TODO: consider removing punctuation from words such as parentheses
     # if new word, add new dictionary entry for word and assign initial count of 1
     if w not in tempDict:
       tempDict[w] = 1
