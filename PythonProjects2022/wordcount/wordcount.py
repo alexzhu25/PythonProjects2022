@@ -2,7 +2,7 @@
 # counts the number of times that each word appears in a text file
 
 # source text file
-fo = open("wordcountdoc.txt") 
+fo = open(.\"wordcountdoc.txt") 
 # TODO: can add query for custom document selection
 
 
