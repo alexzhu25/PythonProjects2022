@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f98dbfa7-915d-45c6-b9df-e93540b1436f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>wordcount\wordcount.py</StartupFile>
+    <StartupFile>passwordgenerator.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="passwordgenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PythonProjects2022.py" />
     <Compile Include="wordcount\wordcount.py">
       <SubType>Code</SubType>
